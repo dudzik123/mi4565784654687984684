@@ -1,82 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte - Futuro Sustentável</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <header>
-        <div class="container">
-            <h1>Agro Forte</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projeto">Projeto</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            🌱 Agro Forte
         </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</h2>
-            <p>Promovendo práticas agrícolas conscientes e preservação da natureza.</p>
-            <a href="#projeto" class="btn">Conheça o Projeto</a>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte</h1>
+
+            <h2>Futuro Sustentável</h2>
+
+            <p>
+                Produzir mais, preservar melhor e garantir qualidade
+                para as próximas gerações.
+            </p>
+
+            <a href="#sobre" class="btn">
+                Saiba Mais
+            </a>
         </div>
     </section>
 
-    <section id="sobre" class="sobre container">
-        <h2>Sobre Nós</h2>
+    <section id="sobre" class="sobre">
+        <h2>Sobre o Projeto</h2>
+
         <p>
-            No Agro Forte, acreditamos que é possível produzir alimentos de forma eficiente 
-            sem prejudicar o meio ambiente. Nossa missão é integrar tecnologia, inovação e 
-            sustentabilidade na agricultura.
+            O Agro Forte promove a integração entre tecnologia,
+            produtividade e preservação ambiental. A agricultura
+            moderna pode crescer sem comprometer os recursos naturais,
+            utilizando práticas sustentáveis que beneficiam produtores,
+            consumidores e o planeta.
         </p>
     </section>
 
-    <section id="projeto" class="projeto">
-        <div class="container">
-            <h2>Nosso Projeto</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Produção Sustentável</h3>
-                    <p>Adotamos práticas que aumentam a produtividade e respeitam o ecossistema.</p>
-                </div>
-                <div class="card">
-                    <h3>Preservação Ambiental</h3>
-                    <p>Protegemos florestas, rios e solos, garantindo biodiversidade e recursos naturais.</p>
-                </div>
-                <div class="card">
-                    <h3>Tecnologia Verde</h3>
-                    <p>Incorporamos inovação e monitoramento inteligente para decisões mais eficientes.</p>
-                </div>
+    <section id="beneficios" class="beneficios">
+
+        <h2>Benefícios da Agricultura Sustentável</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🌾 Produção Eficiente</h3>
+                <p>
+                    Maior produtividade utilizando recursos de forma inteligente.
+                </p>
             </div>
+
+            <div class="card">
+                <h3>🌳 Preservação Ambiental</h3>
+                <p>
+                    Conservação de florestas, rios e biodiversidade.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚜 Tecnologia Verde</h3>
+                <p>
+                    Uso de inovação para reduzir impactos ambientais.
+                </p>
+            </div>
+
         </div>
+
     </section>
 
-    <section id="contato" class="contato container">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+    <section id="dados" class="dados">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <h2>Nossos Resultados</h2>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        <div class="estatisticas">
 
-            <button type="submit">Enviar</button>
+            <div class="numero">
+                <span class="contador" data-target="150">0</span>
+                <p>Produtores Atendidos</p>
+            </div>
+
+            <div class="numero">
+                <span class="contador" data-target="500">0</span>
+                <p>Hectares Preservados</p>
+            </div>
+
+            <div class="numero">
+                <span class="contador" data-target="95">0</span>
+                <p>% de Eficiência</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+
+        <h2>Entre em Contato</h2>
+
+        <form id="formulario">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Seu Nome"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Seu E-mail"
+                required>
+
+            <textarea
+                id="mensagem"
+                rows="5"
+                placeholder="Digite sua mensagem..."
+                required></textarea>
+
+            <button type="submit">
+                Enviar Mensagem
+            </button>
+
         </form>
+
+        <div id="resultado"></div>
+
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Agro Forte. Todos os direitos reservados.</p>
-        </div>
+        <p>
+            © 2026 Agro Forte | Futuro Sustentável
+        </p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
